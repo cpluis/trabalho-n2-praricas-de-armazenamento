@@ -10,7 +10,7 @@
 	<h1>Trabalho N2</h1>
 		<h2>Pesquisa e Armazenamento de Dados</h2>
 		<div class="meunome">
-		<h3>Luis Mauricio C. Pires & Victória da Silva Pachec</h3>
+		<h3>Luis Mauricio C. Pires & Victória da Silva Pacheco</h3>
 		</div>
 		<div class="menu">
 			<h2>Menu de Links</h2>
