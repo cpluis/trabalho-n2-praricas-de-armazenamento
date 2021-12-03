@@ -1,6 +1,14 @@
+
 body{
+	background-image: url(/trabalho-n2-praricas-de-armazenamento/img/img6.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    /* e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% 100%;
+	background-position: center;
 	font-family: helvetica;
 	font-size: 15px;
+	width: 100%;
 }
 
 h1 {
@@ -23,6 +31,12 @@ h3{
 
 }
 
+h4{
+	text-align: center;
+	font-size: 25px;
+	
+}
+
 .titulo{
 	text-align: center;
 	font-size: 120%;
@@ -37,29 +51,39 @@ h3{
 
 input{
 	
-	width: 500px;
-	height: 20px;
-	
-	
-	margin-bottom: 20px;
+	width: 430px;
+	height: 35px;
 }
 .menu{
 	text-align: center;
 	margin: 0 auto;
-	margin-top: 5%;
 	position: relative;
-	width: 20%;
+	width: 22%;
 	display: table;
-	background-color: #CAE1FF;
-	padding: 2%;
-	border-radius: 2%;
+	background-image: url(/trabalho-n2-praricas-de-armazenamento/img/imgmenu.jpg);
+	background-color: rgb(255, 255, 255, 0.4);
+	padding: 8%;
+	border-radius: 4%;
+	box-shadow: 2px 2px 17px rgba(0,0,0,0.2);
+	box-sizing: border-box;
+}
+
+.menu3{
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	width: 22%;
+	display: table;
+	background-image: url(/trabalho-n2-praricas-de-armazenamento/img/imgmenu.jpg);
+	background-color: rgb(255, 255, 255, 0.4);
+	padding: 8%;
+	border-radius: 4%;
 	box-shadow: 2px 2px 17px rgba(0,0,0,0.2);
 	box-sizing: border-box;
 }
 
 .menu2{
 	text-align: center;
-	margin: 15px;
 	margin-top: 5%;
 	position: relative;
 	width: 100%;
@@ -82,16 +106,18 @@ input{
 	position: relative;
 	width: 50%;
 	display: table;
-	background-color: #F5F5F5;
+	background-image: url(/trabalho-n2-praricas-de-armazenamento/img/imgmenu.jpg);
+	background-color: rgb(255, 255, 255, 0.4);
 	padding: 2%;
 	box-sizing: border-box;
+	border-radius: 7%;
 }
 
 .label-nome{
-	width: 50px;
-	height: 40px;
+	height: 50px;
 	text-align: center;
-	margin-left: 713px;
+	position: relative;
+	margin: -208px 0px -6px 0px;
 	
 }
 .menu{
@@ -109,11 +135,10 @@ table {
 }
 
 th{
-	background-color: #CAE1FF;
+	background-color: #E3E3E3;
 }
 
 label {
-	float: left;
 	width: 19%;
 	text-align: right;
 	margin-right: 1%;
@@ -134,7 +159,12 @@ label {
 }
 
 
-
+form {
+	width: 100%;
+    text-align: center;
+    font-size: 200%;
+    color: #000;
+}
 
 
 select{
@@ -142,21 +172,20 @@ select{
 	font-size: 1em;
 }
 
-.botao{
-	
-	width: 160px; 
-	height: 30px;
+.botao{	
+	width: 135px; 
+	height: 50px;
 	margin-top: 18px;
 	margin: 10px;
-	margin-left: 35px;
 	margin-right: 2%;
-	background-color: #00FF7F;
-	border-radius: 40%;
+	background-color: #ffffff;
+	border-radius: 6%;
 	font-size: 18px;
 	border: 1px;
 	cursor: pointer;
 	box-shadow: 2px 2px 2px rgba(0,0,6,0.2);
 	box-sizing: border-box;
+	position: relative;
 }
 
 .botao2{
@@ -164,7 +193,7 @@ select{
 	height: 30px;
 	margin-top: 8px;
 	margin: 10px;
-margin-right: 655px;
+	margin-right: 655px;
 	background-color: #CAE1FF;
 	border-radius: 40%;
 	font-size: 130%;
@@ -175,228 +204,106 @@ margin-right: 655px;
 }
 
 .botao3{	
-	width: 11%; 
-	height: 8%; 
-	background-color: #CAE1FF;
-	border-radius: 10%;
+	width: 15%;
+	background-color: #fff;
+	border-radius: 7%;
 	font-size: 130%;
 	border: 0;
 	cursor: pointer;
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-	margin: 5% 5% 1% 0%;
+	margin: 5% 0% 4% 0%;
 }
 
+/*
 #botao-menu1{
 	
-    padding: 2%;
-	margin-right: 5px;
-    height: 37px;
-    width: 44%;
+    padding: 1%;
+    height: 13px;
+    width: 6%;
     border: 0;
     border-radius: 7%;
-    background-color: #CAE1FF;
+    background-color: ##ffffff;
     font-weight: bold;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 19px rgba(0,0,0,0.2);
     cursor: pointer;
+	position: absolute; 
+	left: 878px;
+    top: 338px;
+	font-size: 16px;
+	text-align: center;
+}*/
+
+#botao-menu1{	
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	display: table;
+	background-color: #ffffff;
+	padding: 8%;
+	border-radius: 7%;
+	box-shadow: 2px 2px 17px rgba(0,0,0,0.2);
+	border: 0px;
+	padding: 18px;
+	width: 140px;
+	font-size: 21px;
+	margin-bottom: 37px;
 }
+
+#botao-menu2{	
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	display: table;
+	background-color: #ffffff;
+	padding: 8%;
+	border-radius: 7%;
+	box-shadow: 2px 2px 17px rgba(0,0,0,0.2);
+	border: 0px;
+	padding: 18px;
+	width: 140px;
+	font-size: 21px;
+}
+
+/*
 
 #botao-menu2{
-	float: none;
-    padding: 2%;
-    height: 37px;
-    width: 44%;
+    padding: 1%;
+    height: 13px;
+    width: 6%;
     border: 0;
     border-radius: 7%;
-    background-color: #CAE1FF;
+    background-color: ##ffffff;
     font-weight: bold;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 19px rgba(0,0,0,0.2);
     cursor: pointer;
-}
+	position: absolute; 
+	left: 878px;
+    top: 415px;
+	font-size: 16px;
+	text-align: center;
+}*/
 
 .botao:hover{
-	background-color: #00CD00;
+	background-color: #d4faff;
 }
 
 .botao2:hover{
-	background-color: #7EC0EE;
+	background-color: #d4faff;
 }
 
 .botao3:hover{
-	background-color: #7EC0EE;
+	background-color: #d4faff;
 }
 
 #botao-menu1:hover{
-	background-color: #696969;
+	background-color: #d4faff;
 }
 
 #botao-menu2:hover{
-	background-color: #696969;
+	background-color: #d4faff;
 }
 
 select{
 	padding: 1%;
 }
 
-
-@media screen and (max-width: 899px) {
-	body{
-		font-size: 17px;
-	}
-
-	h1 {
-		
-	}
-
-	h2{
-
-	}
-
-	h3{
-
-	}
-
-	.menu{
-		padding: 4%;
-		width: 80%;
-	}
-
-	.menu2{
-		text-align: center;
-		margin: 0 auto;
-		margin-top: 5%;
-		position: relative;
-		width: 100%;
-		display: table;
-		background-color: #FFFFFF;
-		padding: 15%;
-		border-radius: 3%;
-		box-sizing: border-box;
-	}
-
-
-
-
-	.botao-tabela{
-		width: 100%;
-	}
-
-	.tabela-centro{
-		text-align: center;
-		width: 100%;
-	}
-
-	.ocultar-celular{
-		display: none;
-	}
-
-	.menu{
-	
-	}
-
-	form{
-		
-	}
-
-	table {
-	
-	}
-
-	th{
-		
-	}
-
-	label {
-		width: 100%;
-		margin: 0;
-		text-align: left;
-	}
-
-
-
-	.radio{
-		float: left;
-		width: 40%;
-		margin: 0;
-		text-align: left;
-		box-sizing: border-box;
-	}
-
-
-
-	select{
-		font-family: helvetica;
-		font-size: 1em;
-	}
-
-	.botao{
-		float: left;
-		margin: 0;
-		margin-right: 5%;
-		width: 45%; 
-		padding: 3%; 
-	}
-
-	.botao2{
-		float: left;
-		margin: 0;
-		margin-left: 5%;
-		width: 45%; 
-		padding: 3%; 
-	}
-
-	.botao3{	
-		width: 25%; 
-	}
-
-	#botao-menu1{
-		float: none;
-	    padding: 2%;
-	    height: 37px;
-	    width: 44%;
-	    border: 0;
-	    border-radius: 7%;
-	    color: #FFFFFF;
-	    background-color: #473C8B;
-	    font-weight: bold;
-	    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-	    cursor: pointer;
-	}
-
-	#botao-menu2{
-		float: none;
-	    padding: 2%;
-	    height: 37px;
-	    width: 44%;
-	    border: 0;
-	    border-radius: 7%;
-	    color: #FFFFFF;
-	    background-color: #473C8B;
-	    font-weight: bold;
-	    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-	    cursor: pointer;
-	}
-
-	.botao:hover{
-		background-color: #00CD00;
-	}
-
-	.botao2:hover{
-		background-color: #7EC0EE;
-	}
-
-	.botao3:hover{
-		background-color: #7EC0EE;
-	}
-
-	#botao-menu1:hover{
-		background-color: #696969;
-	}
-
-	#botao-menu2:hover{
-		background-color: #696969;
-	}
-
-	select{
-		padding: 1%;
-	}
-}
