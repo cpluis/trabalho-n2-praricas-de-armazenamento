@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 <script type="text/javascript" src="query.maskedinput.js"></script>
 <link rel="stylesheet" type="text/css" href="cssN2.css" media="screen"  />	
-<script type="text/javascript" src="funcoesN2.js"></script>
+<script type="text/javascript" src="funcoes.js"></script>
 
 <div class="tabela-centro">
 		<table border="1">
@@ -47,7 +47,7 @@
 				</tbody>
 		</table>
 		<div>
-				<input onclick="window.location.href = 'indexprincipal.php'" type="button" class="botao3" name="botao" value="Cadastro" />
+				<input onclick="window.location.href = 'indexprincipal.php'" type="button" onclick=validarCadastro() class="botao3" name="botao" value="Cadastro" />
 				<input onclick="window.location.href = 'index.php'" type="button" class="botao3" name="botao" value="Menu" />
 		</div>
 </div>

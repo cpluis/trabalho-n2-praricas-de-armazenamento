@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="cssN2.css" media="screen"  />	
 	<meta charset="utf-8">
 	<title>Trabalho N2 Pesquisa e Armazenamento de Dados</title>
+	<script type="text/javascript" src="funcoes.js"></script>
 	<script>
 	function funcao1()
 	{
@@ -29,7 +30,7 @@
 		<div class="menu">
 			<input id="botao-menu1" onclick="window.location.href = 'indexprincipal.php'" style="text-align:center" name="botao" value="Cadastrar" />
 			<?php if(count($dadosDoBanco) > 0) { ?>
-			<input id="botao-menu2" onclick="window.location.href = 'listabancoN2.php'" style="text-align:center"  name="botao" value="Listar" />
+			<input id="botao-menu2" style="text-align:center" onclick="window.location.href = 'listabancoN2.php'" name="botao" value="Listar" />
 			<?php } else { ?> 
 				<input id="botao-menu2" onclick="funcao1()" value="Listar" style="text-align:center"  name="botao" />		
 			<?php } ?> 	
