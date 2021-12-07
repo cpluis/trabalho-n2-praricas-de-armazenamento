@@ -47,7 +47,7 @@
 				</tbody>
 		</table>
 		<div>
-				<input onclick="window.location.href = 'index.php'" type="button" class="botao3" name="botao" value="Cadastro" />
-				<input onclick="window.location.href = 'indexprincipal.php'" type="button" class="botao3" name="botao" value="Menu" />
+				<input onclick="window.location.href = 'indexprincipal.php'" type="button" class="botao3" name="botao" value="Cadastro" />
+				<input onclick="window.location.href = 'index.php'" type="button" class="botao3" name="botao" value="Menu" />
 		</div>
 </div>

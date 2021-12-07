@@ -30,9 +30,7 @@ function inserirPessoa(){
 }
 
 function mostrarCadastrados(){
-	$grupo = array();
 	$grupo2 = array();
-	$grupo3 = array();
 	$banco = abrirBanco();
 
 	$sql = "SELECT nome FROM pessoa ";
@@ -53,10 +51,12 @@ function mostrarCadastradosSort(){
 		$grupo2 [] = $row;			
 }
 
-$grupo3 = array_reverse($grupo2); 	
-$grupo4 = selectionSort($grupo3);
+    //$grupo3 = array_reverse($grupo2); 
+    //$grupo4 = selectionSort($grupo3);	
+    
+    $grupo3 = selectionSort($grupo2);
 
-	return $grupo4;
+	return $grupo3;
 }
 
 function selectionSort($data)
@@ -86,12 +86,7 @@ function selectionSort($data)
 
 
 
-
-
-
-
-
-///=====================
+///==========FUNÇÃO ANTIGA===========
 function selection_sort($data)
 {
 	

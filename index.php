@@ -1,27 +1,38 @@
+<?php 
+	include("conexaoN2.php");
+	
+	$dadosDoBanco = mostrarCadastrados();
+	/*
+	$dadosOrdenadosPeloSort = mostrarCadastradosSort(); */	
+?>
 <!DOCTYPE html>
-
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="cssN2.css" media="screen" />
-		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="query.maskedinput.js"></script>
-		<script type="text/javascript" src="funcoesN2.js"></script>
-				
-		<h1>Trabalho N2</h1>
-		<h2>Pesquisa e Armazenamento de Dados</h2>
-		<meta charset="utf-8">
-		<title>Trabalho N2</title>
-	</head>
-	<body style="font-family: helvetica">	
-		<div class="menu3">
-			<form name="cadastropessoa" action="listabancoN2.php" method="post" onsubmit="return validarCadastro();">
-					<input type="text" name="nome" id ="nome" maxlength="100"  placeholder = " Insira um nome..."  />							
-					<input type="hidden" name="acao" value="inserir" />
-					<input class="botao" type="submit" name="botao" value="Cadastrar">
-					<input class="botao" onclick="window.location.href = 'listabancoN2.php'" style="text-align:center" class="botao2" name="botao" value="Listar" />						
-			</form>
+<head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="cssN2.css" media="screen"  />	
+	<meta charset="utf-8">
+	<title>Trabalho N2 Pesquisa e Armazenamento de Dados</title>
+	<script>
+	function funcao1()
+	{
+	alert("É necessário cadastrar UM primeiro nome.");
+	}
+	</script>
+</head>
+	<h1>Trabalho N2</h1>
+	<h2>Pesquisa e Armazenamento de Dados</h2>
+	<div class="meunome">
+	<h3>Luis Mauricio C. Pires & Victória da Silva Pacheco</h3>
+	<h4>Menu de Links</h4>
+	</div>
+	<body>			
+		<div class="menu">
+			<input id="botao-menu1" onclick="window.location.href = 'indexprincipal.php'" style="text-align:center" name="botao" value="Cadastrar" />
+			<?php if(count($dadosDoBanco) > 0) { ?>
+			<input id="botao-menu2" onclick="window.location.href = 'listabancoN2.php'" style="text-align:center"  name="botao" value="Listar" />
+			<?php } else { ?> 
+				<input id="botao-menu2" onclick="funcao1()" value="Listar" style="text-align:center"  name="botao" />		
+			<?php } ?> 	
 		</div>
 	</body>
-	
 </html>

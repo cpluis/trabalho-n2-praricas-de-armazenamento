@@ -5,3 +5,4 @@ function validarCadastro(){
 		return false;
 	}return true;
 }
+
